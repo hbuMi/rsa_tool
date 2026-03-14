@@ -2,7 +2,7 @@
 
 Opinto-ohjelma: Tietojenkäsittelytieteen kandidaattiohjelma (TKT) 
 
-Tässä projektissa implementoidaan RSA-algoritmi osana Algoritmit ja tekoäly harjoitustyö -kurssia. Projekti toteutetaan hyödyntäen Pythonia, joka on toistaiseksi ainut ohjelmointikieli, jota osaan vertaisarvioida. Projektin käyttöliittymä ja dokumentointi toteutetaan suomeksi. 
+Tässä projektissa implementoidaan RSA-algoritmi osana Algoritmit ja tekoäly harjoitustyö -kurssia. Projekti toteutetaan hyödyntäen Pythonia, joka on toistaiseksi ainut ohjelmointikieli, jota osaan vertaisarvioida. Projektin käyttöliittymä ja dokumentointi toteutetaan suomeksi. Valitsin aiheen mielenkiinnosta tietoturvaa kohtaan.
 
 Tavoitteena on luoda ohjelma, joka käyttäjän syötteen mukaan: 
   1. Luo RSA-salauksessa käytettävän avainparin (julkinen ja yksityinen avain) 
@@ -11,7 +11,7 @@ Tavoitteena on luoda ohjelma, joka käyttäjän syötteen mukaan:
 
 ## Avainparin luominen 
 
-Projektin keskiössä on avainparien luominen ja alkulukujen generointi, jossa käytetään useita eri algoritmeja. 
+Projektin keskiössä on avainparien luominen ja alkulukujen generointi, joissa käytetään useita eri algoritmeja. 
   - Julkisen avaimen luomisessa generoidaan kaksi suurta alkulukua p ja q. Näiden generointiin käytetään Sieve of Eratosthenes- ja Miller–Rabin primality test -algoritmeja. Sieve of Eratosthenes -algoritmilla muodostetaan lista pienistä alkuluvuista, jota hyödynnetään seulana tarkastamaan onko testattava luku jaollinen jollakin niistä. Mikäli testattava luku ei ole jaollinen millään listan pienistä alkuluvuista, käytetään Miller–Rabin primality test -algoritmia arvioimaan, onko testattava luku todennäköinen alkuluku. 
   - Kun kaksi suurta alkulukua on generoitu, RSA-avaimet muodostetaan: 
     1. Lasketaan n = p x q 
